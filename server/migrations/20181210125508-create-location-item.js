@@ -8,9 +8,20 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER
       },
-      content: {
+      name: {
         type: Sequelize.STRING,
-        allowNull: false
+        allowNull: false,
+      },
+      noOfFemales: {
+        type: Sequelize.INTEGER,
+        allowNull: false,
+      },
+      noOfMales: {
+        type: Sequelize.INTEGER,
+        allowNull: false,
+      },
+      totalNumber: {
+        type: Sequelize.INTEGER
       },
       complete: {
         type: Sequelize.BOOLEAN,
@@ -32,7 +43,7 @@ module.exports = {
           key: 'id',
           as: 'locationId',
         },
-      }
+      },
     });
   },
   down: (queryInterface, Sequelize) => {

@@ -1,10 +1,19 @@
 'use strict';
 module.exports = (sequelize, DataTypes) => {
   const LocationItem = sequelize.define('LocationItem', {
-    content: {
+    name: {
       type: DataTypes.STRING,
       allowNull: false,
     },
+    noOfFemales: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+    },
+    noOfMales: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+    },
+    totalNumber: DataTypes.INTEGER,
     complete: {
       type: DataTypes.BOOLEAN,
       defaultValue: false,
