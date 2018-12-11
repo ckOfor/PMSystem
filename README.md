@@ -21,20 +21,20 @@ This is the link in which to access the api.
 
 Below are the collection of routes.
 ```
- app.post('/api/locations', locationsController.create);
-  app.get('/api/locations', locationsController.list);
-  app.get('/api/locations/:locationId', locationsController.retrieve);
-  app.put('/api/locations/:locationId', locationsController.update);
-  app.delete('/api/locations/:locationId', locationsController.destroy);
+ app.post('https://popmansystem.herokuapp.com/api/locations', locationsController.create);
+  app.get('https://popmansystem.herokuapp.com/api/locations', locationsController.list);
+  app.get('https://popmansystem.herokuapp.com/api/locations/:locationId', locationsController.retrieve);
+  app.put('https://popmansystem.herokuapp.com/api/locations/:locationId', locationsController.update);
+  app.delete('https://popmansystem.herokuapp.com/api/locations/:locationId', locationsController.destroy);
   
-  app.post('/api/locations/:locationId/items', locationsItemController.create);
-  app.put('/api/locations/:locationId/items/:locationItemId', locationsItemController.update);
+  app.post('https://popmansystem.herokuapp.com/api/locations/:locationId/items', locationsItemController.create);
+  app.put('https://popmansystem.herokuapp.com/api/locations/:locationId/items/:locationItemId', locationsItemController.update);
   app.delete(
-    '/api/locations/:locationId/items/:locationItemId', locationsItemController.destroy
+    'https://popmansystem.herokuapp.com/api/locations/:locationId/items/:locationItemId', locationsItemController.destroy
   );
   
   // For any other request method on todo location items, we're going to return "Method Not Allowed"
-  app.all('/api/location/:location/items', (req, res) =>
+  app.all('https://popmansystem.herokuapp.com/api/location/:location/items', (req, res) =>
     res.status(405).send({
       message: 'Method Not Allowed',
     }));
