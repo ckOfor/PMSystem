@@ -64,7 +64,7 @@ module.exports = {
       
       return locationItem
       .destroy()
-      .then(() => res.status(200).send({ message: 'Location deleted successfully.' }))
+      .then(() => res.status(200).send({ message: 'LocationItem deleted successfully.' }))
       .catch(error => res.status(400).send(error));
     })
     .catch(error => res.status(400).send(error));
