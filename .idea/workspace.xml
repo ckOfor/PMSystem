@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a6ce24f8-5a32-457a-b257-2fa77df8300b" name="Default Changelist" comment="" />
+
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -50,6 +51,7 @@
           <entry key=".env file" value="107" />
           <entry key="JSON" value="94" />
           <entry key="JavaScript" value="4217" />
+
         </counts>
       </usages-collector>
     </session>
@@ -127,6 +129,7 @@
       <find>Enter a valid no of female</find>
       <find>locationResult1ameri</find>
       <find>SequelizeValidationError</find>
+
       <find>totalNumber</find>
       <find>Apapa Under</find>
       <find>LocationItem Not Found</find>
