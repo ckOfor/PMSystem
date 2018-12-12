@@ -77,7 +77,16 @@ describe('LOCATION API', () => {
         db.Location.destroy({ where: { name: 'Festac' } })
         .then(() => {
           db.Location.destroy({ where: { name: 'America' } })
-          .then(done())
+          .then(() => {
+            db.Location.destroy({ where: { id: locationResult1.id, } })
+            .then(() => {
+              db.Location.destroy({ where: { id: locationResult2.id, } })
+              .then(() => {
+                db.Location.destroy({ where: { name: 'Updated name', } })
+                .then(done())
+              })
+            })
+          })
         })
       })
       .catch((error) => {
