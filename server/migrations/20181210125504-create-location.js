@@ -8,9 +8,20 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER
       },
-      title: {
+      name: {
         type: Sequelize.STRING,
-        allowNull: false
+        allowNull: false,
+      },
+      noOfFemales: {
+        type: Sequelize.INTEGER,
+        allowNull: false,
+      },
+      noOfMales: {
+        type: Sequelize.INTEGER,
+        allowNull: false,
+      },
+      totalNumber: {
+        type: Sequelize.INTEGER
       },
       createdAt: {
         allowNull: false,

@@ -13,9 +13,9 @@ module.exports = (app) => {
   app.delete('/api/locations/:locationId', locationsController.destroy);
   
   app.post('/api/locations/:locationId/items', locationsItemController.create);
-  app.put('/api/locations/:locationId/items/:locationId', locationsItemController.update);
+  app.put('/api/locations/:locationId/items/:locationItemId', locationsItemController.update);
   app.delete(
-    '/api/locations/:locationId/items/:locationId', locationsItemController.destroy
+    '/api/locations/:locationId/items/:locationItemId', locationsItemController.destroy
   );
   
   // For any other request method on todo location items, we're going to return "Method Not Allowed"

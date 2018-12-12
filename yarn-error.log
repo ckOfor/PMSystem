@@ -1,0 +1,58 @@
+Arguments: 
+  /usr/local/Cellar/node/11.3.0_1/bin/node /usr/local/Cellar/yarn/1.12.3/libexec/bin/yarn.js test
+
+PATH: 
+  /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/oforchinedu/android/sdk/platform-tools/
+
+Yarn version: 
+  1.12.3
+
+Node version: 
+  11.3.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  SyntaxError: /Users/oforchinedu/Documents/population-management-system/package.json: Unexpected string in JSON at position 227
+      at JSON.parse (<anonymous>)
+      at /usr/local/Cellar/yarn/1.12.3/libexec/lib/cli.js:1631:59
+      at Generator.next (<anonymous>)
+      at step (/usr/local/Cellar/yarn/1.12.3/libexec/lib/cli.js:304:30)
+      at /usr/local/Cellar/yarn/1.12.3/libexec/lib/cli.js:315:13
+
+npm manifest: 
+  {
+    "name": "population-management-system",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "test": "NODE_ENV=test mocha server/tests/*.spec.js --exit --compilers js:babel-core/register"
+      "start:dev": "nodemon ./bin/www",
+      "start": "node ./bin/www"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "body-parser": "^1.18.3",
+      "dotenv": "^6.2.0",
+      "express": "^4.16.4",
+      "morgan": "^1.9.1",
+      "mysql": "^2.16.0",
+      "mysql2": "^1.6.4",
+      "pg": "^7.7.1",
+      "pg-hstore": "^2.3.2",
+      "sequelize": "^4.41.2"
+    },
+    "devDependencies": {
+      "nodemon": "^1.18.7"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
